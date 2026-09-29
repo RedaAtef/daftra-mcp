@@ -1,3 +1,8 @@
+// ملاحظة: لو ظهر خطأ "UNABLE_TO_VERIFY_LEAF_SIGNATURE" فده معناه إن برنامج حماية (زي
+// Avast) بيعمل فحص HTTPS ومحتاج شهادته مُضافة عبر متغيّر بيئة NODE_EXTRA_CA_CERTS.
+// هذا المتغيّر لازم يكون مضبوطًا في إعدادات تشغيل السيرفر (claude_desktop_config.json)
+// نفسها قبل بدء العملية — تعيينه من داخل الكود هنا لا يعمل لأن Node يقرأه مرة واحدة فقط
+// عند الإقلاع.
 const { Server } = require("@modelcontextprotocol/sdk/server/index.js");
 const { StdioServerTransport } = require("@modelcontextprotocol/sdk/server/stdio.js");
 const { CallToolRequestSchema, ListToolsRequestSchema } = require("@modelcontextprotocol/sdk/types.js");
