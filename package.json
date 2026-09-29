@@ -1,0 +1,13 @@
+{
+  "name": "daftra-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for read-only access to Daftra (دفترة) accounting data",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
